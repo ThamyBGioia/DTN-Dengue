@@ -5227,3 +5227,14 @@ function asArray(value) {
 
 	return L;
 }));
+</script>
+<script>LeafletWidget.methods.addProviderTiles = function(provider, layerId, group, options) {
+  this.layerManager.addLayer(L.tileLayer.provider(provider, options), "tile", layerId, group);
+};
+</script>
+<style>.leaflet-container {background:#FFFFFF;}</style>
+</head>
+<body style="background-color: white;">
+<div id="htmlwidget_container">
+  <div class="leaflet html-widget html-fill-item" id="htmlwidget-717d98424e0d355cde6a" style="width:100%;height:400px;"></div>
+</div>
